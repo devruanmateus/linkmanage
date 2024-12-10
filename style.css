@@ -1,0 +1,489 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --content-spacing: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilo do cabeçário da página */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #13181f;
+}
+
+.logo {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.signup button {
+  display: block;
+}
+
+/* Estilo e posicionamento da navegação da página */
+.navigation-vdesktop {
+  display: none; /* Ocultar navegação para desktop */
+  color: #fff;
+}
+
+.header-actions {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 30px;
+  gap: 20px;
+}
+
+#login {
+  display: none;
+}
+
+#signup {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: #2276f5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#signup:hover {
+  background: #195cc1;
+}
+
+#icon-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#icon-menu span {
+  color: #fff;
+  font-size: 25px;
+}
+
+.navigation-vmobile li:nth-child(1) {
+  border-top: 1px solid #404a58;
+}
+
+.navigation-vmobile li {
+  background: linear-gradient(to top, #13181f 50%, #21252b 250%);
+}
+
+.navigation-vmobile li a {
+  display: block;
+  padding: 14px;
+  color: #404a58;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-vmobile li:hover {
+  background: linear-gradient(to bottom, #13181f 50%, #21252b 300%);
+}
+
+.navigation-vmobile li a:hover {
+  color: #fff;
+}
+
+/* Seção de introdução */
+.introduction {
+  display: inline;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #13181f;
+  border-bottom: 50px solid #2276f5;
+  height: 100vh;
+}
+
+.introduction img {
+  max-width: 100%;
+  height: 530px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.introduction-content {
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 9rem;
+  background-color: #404a5877;
+  color: #fff;
+  padding: 20px;
+  gap: 15px;
+}
+
+#introduction-btn {
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2276f5;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#introduction-btn:hover {
+  background: #195cc1;
+}
+
+#image {
+  display: block;
+  flex-flow: column wrap;
+  background-color: #13181f;
+}
+
+#border-background-content {
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+  border: 30px solid #2276f5;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.content {
+  background: #2276f5;
+}
+
+/* Estilo da seção de vantagens do Linkmanage */
+.advantages-intro .intro {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  padding: var(--content-spacing);
+}
+
+.advantages-intro h1,
+p {
+  color: #fff;
+}
+
+.advantages-intro h1 {
+  font-size: 1.5rem;
+}
+
+.advantages-intro p {
+  font-size: 0.9rem;
+}
+
+#icon-linkmanage {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#icon-linkmanage img {
+  max-width: 70%;
+  object-fit: cover;
+}
+
+.advantages-section {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.advantages-content {
+  display: grid;
+  gap: 20px;
+  padding: var(--content-spacing);
+}
+
+.advantages {
+  background-color: #13181f;
+  color: #404a58;
+  padding: 50px;
+}
+
+.advantages:hover {
+  color: #fff;
+}
+
+#border-background-advantages {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border: 30px solid #13181f;
+  border-radius: 50px 50px 0px 0px;
+}
+
+/* Estilo da seção de benefícios do Linkmanage */
+.benefits-content {
+  position: relative;
+  background-color: #13181f;
+  padding: var(--content-spacing);
+  padding-bottom: 115px;
+}
+
+.benefits-intro {
+  display: flex;
+  flex-flow: column wrap;
+  color: #fff;
+  gap: 10px;
+}
+
+.benefits-intro p {
+  font-size: 0.9rem;
+}
+
+.benefits {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.benefits-box h3,
+.benefits-box p {
+  color: #13181f;
+}
+
+.benefits-box-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.benefits-box-container img {
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(89%) saturate(1929%)
+    hue-rotate(203deg) brightness(96%) contrast(101%);
+  margin-bottom: 15px;
+}
+
+.benefits-box {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  background: #404a58;
+  padding: 15px;
+  border-radius: 15px;
+  gap: 7px;
+  border-bottom: 5px solid transparent;
+}
+
+.benefits-box:hover {
+  border-bottom: 5px solid #2276f5;
+  color: #fff;
+}
+
+.benefits-box p {
+  font-size: 0.9rem;
+}
+
+#btn-cta-benefits {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#btn-cta-benefits a {
+  background: #2276f5;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+#btn-cta-benefits a:hover {
+  background: #195cc1;
+}
+
+#border-background-benefits {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 30px solid #2276f5;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.services {
+  padding: var(--content-spacing);
+}
+
+.services-intro {
+  display: flex;
+  flex-flow: column wrap;
+  color: #fff;
+  gap: 10px;
+}
+
+.services-intro p {
+  font-size: 0.9rem;
+}
+
+/* Estilo da seção de planos do Linkmanage */
+.plans-container {
+  display: grid;
+  gap: 40px;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+
+.plans {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  padding: 40px;
+  background: #13181f;
+  border-radius: 20px;
+}
+
+.plans-intro {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.plans-price {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
+}
+
+.plans-intro h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.plans-intro p {
+  color: #404a58;
+}
+
+.plans-price p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.plans-price p span {
+  color: #404a58;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#purchase-btn {
+  padding: 10px;
+  border: 1px solid #2276f5;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#purchase-btn:hover {
+  background: #195cc1;
+}
+
+.plans-advantages {
+  list-style-position: inside;
+  color: #404a58;
+}
+
+#border-background-services {
+  padding: 30px;
+  background: #13181f;
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+}
+
+/* Estilo do Rodapé */
+footer {
+  background-color: #13181f;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+}
+
+.slogan img {
+  width: 150px;
+}
+
+.slogan h2 {
+  font-size: 1.2rem;
+  color: #404a58;
+}
+
+.contact ul {
+  list-style: none;
+  color: #404a58;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+}
+
+.footer-navigation h3 {
+  font-size: 1rem;
+  color: #404a58;
+}
+
+.footer-navigation ul {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+  list-style: none;
+}
+
+.footer-navigation ul li a {
+  color: #404a58;
+  text-decoration: none;
+}
+
+.footer-navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.divider-line {
+  height: 1px;
+  width: 100%;
+  background: #404a58;
+}
+
+.signature {
+  background: #404a58;
+  text-align: center;
+  padding: 5px;
+}
+
+.signature p {
+  color: #13181f;
+  font-size: 1.1rem;
+  font-style: italic;
+}

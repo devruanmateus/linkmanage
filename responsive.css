@@ -1,0 +1,613 @@
+:root {
+  --content-spacing-desktop: 35px;
+  --content-spacing-large-screens: 45px;
+}
+
+/* Responsivo para celular */
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .introduction-content {
+    top: 7rem;
+  }
+
+  .introduction-content h1 {
+    font-size: 2rem;
+  }
+
+  .introduction-content p {
+    font-size: 0.95rem;
+  }
+
+  .advantages-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .advantages-intro p {
+    font-size: 1rem;
+  }
+
+  #icon-linkmanage {
+    margin-top: 20px;
+  }
+
+  .benefits-intro p {
+    font-size: 1rem;
+  }
+
+  .benefits-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .benefits-box p {
+    font-size: 1rem;
+  }
+
+  .services-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-intro p {
+    font-size: 1rem;
+  }
+
+  #icon-linkmanage img {
+    max-width: 50%;
+  }
+
+  .slogan h2 {
+    font-size: 1.7rem;
+    color: #404a58;
+  }
+}
+
+/* Responsivo para tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    border: none;
+    display: block;
+  }
+
+  .navigation-vmobile li:nth-child(1) {
+    border: none;
+  }
+
+  .navigation-vmobile li {
+    width: 100%;
+  }
+
+  .navigation-vmobile ul {
+    border-top: #404a58 solid 1px;
+    list-style: none;
+    display: flex;
+  }
+
+  #image {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: beige;
+  }
+
+  .introduction-content {
+    top: 7rem;
+    width: 90%;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .introduction-content h1,
+  .introduction-content p,
+  .introduction-content a {
+    margin-left: 20px;
+  }
+
+  .introduction-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .introduction-content p {
+    font-size: 1.1rem;
+  }
+
+  #introduction-btn {
+    padding: 15px 25px;
+  }
+
+  .advantages-intro h1 {
+    font-size: 2rem;
+  }
+
+  .advantages-intro p {
+    font-size: 1.1rem;
+  }
+
+  #icon-linkmanage {
+    margin-top: 20px;
+  }
+
+  #icon-linkmanage img {
+    width: 40%;
+  }
+
+  .benefits-intro h2 {
+    font-size: 2rem;
+  }
+
+  .benefits-intro p {
+    font-size: 1.1rem;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits-box {
+    height: 250px;
+    justify-content: center;
+  }
+
+  .benefits-box p {
+    font-size: 1rem;
+  }
+
+  .services-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-intro p {
+    font-size: 1rem;
+  }
+
+  #icon-linkmanage img {
+    max-width: 50%;
+  }
+
+  .slogan h2 {
+    font-size: 1.7rem;
+    color: #404a58;
+  }
+
+  .plans-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsivo para desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    padding: 0px var(--content-spacing-desktop) 0px
+      var(--content-spacing-desktop);
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .navigation-vdesktop {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    margin-left: 100px;
+  }
+
+  .navigation-vdesktop ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .navigation-vdesktop ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navigation-vdesktop ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #262a2f;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  #image {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: beige;
+  }
+
+  .introduction-content {
+    top: 7rem;
+    width: 90%;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .introduction-content h1,
+  .introduction-content p,
+  .introduction-content a {
+    margin-left: 20px;
+  }
+
+  .introduction-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .introduction-content p {
+    font-size: 1.1rem;
+  }
+
+  #introduction-btn {
+    padding: 15px 25px;
+  }
+
+  .advantages-intro {
+    display: grid;
+    align-items: center;
+    padding: var(--content-spacing-desktop);
+  }
+
+  .advantages-intro h1 {
+    font-size: 2rem;
+    grid-column: 1;
+  }
+
+  .advantages-intro p {
+    font-size: 1.1rem;
+    grid-column: 1;
+  }
+
+  .advantages-content {
+    display: flex;
+    justify-content: center;
+    padding: var(--content-spacing-desktop);
+  }
+
+  #icon-linkmanage {
+    grid-column: 2;
+  }
+
+  #icon-linkmanage img {
+    width: 70%;
+  }
+
+  .benefits-intro {
+    padding: 35px;
+  }
+
+  .benefits-intro h2 {
+    font-size: 2rem;
+  }
+
+  .benefits-intro p {
+    font-size: 1.1rem;
+  }
+
+  .benefits {
+    padding: var(--content-spacing-desktop);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits-box {
+    height: 250px;
+    justify-content: center;
+  }
+
+  .benefits-box p {
+    font-size: 1rem;
+  }
+
+  .services-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .services {
+    padding: 35px;
+  }
+
+  .services-intro p {
+    font-size: 1rem;
+  }
+
+  .slogan h2 {
+    font-size: 1.7rem;
+    color: #404a58;
+  }
+
+  .plans-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+  }
+
+  .contact {
+    grid-column: 1;
+  }
+
+  .divider-line {
+    display: none;
+  }
+
+  .footer-navigation {
+    grid-column: 2;
+  }
+
+  .slogan {
+    grid-column: 1;
+  }
+}
+
+/* Responsivo para grandes telas */
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 0px var(--content-spacing-large-screens) 0px
+      var(--content-spacing-large-screens);
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login,
+  #signup {
+    font-size: 0.9rem;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .navigation-vdesktop {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    margin-left: 100px;
+  }
+
+  .navigation-vdesktop ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .navigation-vdesktop ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navigation-vdesktop ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #262a2f;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  #image {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: beige;
+  }
+
+  .introduction-content {
+    top: 6rem;
+    width: 70%;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .introduction-content h1,
+  .introduction-content p,
+  .introduction-content a {
+    margin-left: var(--content-spacing-large-screens);
+  }
+
+  .introduction-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .introduction-content p {
+    font-size: 1.3rem;
+  }
+
+  #introduction-btn {
+    width: 200px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+
+  .advantages-intro {
+    display: grid;
+    align-items: center;
+    padding: var(--content-spacing-large-screens);
+  }
+
+  .advantages-intro h1 {
+    font-size: 2.5rem;
+    grid-column: 1;
+  }
+
+  .advantages-intro p {
+    font-size: 1.2rem;
+    grid-column: 1;
+  }
+
+  .advantages-content {
+    display: flex;
+    justify-content: center;
+    padding: var(--content-spacing-large-screens);
+  }
+
+  #icon-linkmanage {
+    grid-column: 2;
+  }
+
+  #icon-linkmanage img {
+    width: 70%;
+  }
+
+  .benefits-intro {
+    padding: var(--content-spacing-large-screens);
+  }
+
+  .benefits-intro h2 {
+    font-size: 2.5rem;
+  }
+
+  .benefits-intro p {
+    font-size: 1.2rem;
+  }
+
+  .benefits {
+    padding: var(--content-spacing-large-screens);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits-box {
+    height: 250px;
+    justify-content: center;
+  }
+
+  .benefits-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .benefits-box p {
+    font-size: 1.1rem;
+  }
+
+  #btn-cta-benefits {
+    margin-top: 20px;
+  }
+
+  #btn-cta-benefits a {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+
+  .services-intro h2 {
+    font-size: 2.5rem;
+  }
+
+  .services-intro {
+    padding: var(--content-spacing-large-screens);
+  }
+
+  .services-intro p {
+    font-size: 1.1rem;
+  }
+
+  .slogan h2 {
+    font-size: 2rem;
+    color: #404a58;
+  }
+
+  .plans-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px var(--content-spacing-large-screens)
+      var(--content-spacing-large-screens) var(--content-spacing-large-screens);
+  }
+
+  .plans {
+    width: 100%;
+  }
+
+  .plans-intro h3 {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+
+  .plans-intro p {
+    font-size: 1.2rem;
+    color: #404a58;
+  }
+
+  #purchase-btn {
+    font-size: 1.1rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+  }
+
+  .contact {
+    grid-column: 1;
+  }
+
+  .divider-line {
+    display: none;
+  }
+
+  .footer-navigation {
+    grid-column: 2;
+  }
+
+  .slogan {
+    grid-column: 1;
+  }
+}
