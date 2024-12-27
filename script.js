@@ -9,7 +9,7 @@ function openMenu() {
 }
 
 // Abrir e fechar resposta da faq
-const faqs = document.querySelectorAll(".faqs");
+const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
   const openIcon = faq.querySelector(".open-icon");
