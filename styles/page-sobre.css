@@ -1,0 +1,73 @@
+@import url(global.css);
+
+.content {
+  background-color: #2276f5;
+}
+
+.introduction {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  padding: var(--content-spacing);
+  height: 250px;
+  gap: 15px;
+}
+
+.introduction-text {
+  display: grid;
+  gap: 15px;
+  color: #fff;
+}
+
+/* Artigo com as seções relacionadas a apresentação da Missão e Valores da Empresa */
+.presentation {
+  display: grid;
+}
+
+.performance-picture {
+  background-color: #fff;
+  height: 400px;
+}
+
+.performance-picture img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.performance-info {
+  background: #13181f;
+  color: #fff;
+  padding: var(--content-spacing);
+}
+
+.presentation .performance:nth-of-type(2) {
+  text-align: right;
+}
+
+.performance #imagem-v-pc {
+  display: none;
+}
+
+.performance-text {
+  display: grid;
+  gap: 15px;
+}
+
+#list-advantages {
+  display: grid;
+  gap: 20px;
+  list-style-position: inside;
+}
+
+/* Encerramento */
+.closure {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+  font-weight: 600;
+  padding: var(--content-spacing);
+  color: #fff;
+}

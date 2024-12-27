@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --content-spacing: 45px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilo do cabeçário da página */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #13181f;
+}
+
+.logo {
+  display: grid;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.signup button {
+  display: block;
+}
+
+/* Estilo e posicionamento da navegação da página */
+.navigation-vdesktop {
+  display: none; /* Ocultar navegação para desktop */
+  color: #fff;
+}
+
+.header-actions {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  justify-content: right;
+  gap: 20px;
+}
+
+#login {
+  display: none;
+}
+
+#signup {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: #2276f5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#signup:hover {
+  background: #195cc1;
+}
+
+#icon-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#icon-menu span {
+  color: #fff;
+  font-size: 25px;
+}
+
+.navigation-vmobile li:nth-child(1) {
+  border-top: 1px solid #404a58;
+}
+
+.navigation-vmobile li {
+  background: linear-gradient(to top, #13181f 50%, #21252b 250%);
+}
+
+.navigation-vmobile li a {
+  display: block;
+  padding: 14px;
+  color: #404a58;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-vmobile li:hover {
+  background: linear-gradient(to bottom, #13181f 50%, #21252b 300%);
+}
+
+.navigation-vmobile li a:hover {
+  color: #fff;
+}
+
+/* Estilo do Rodapé */
+footer {
+  background-color: #13181f;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+}
+
+.slogan img {
+  width: 150px;
+}
+
+.slogan h2 {
+  font-size: 1.2rem;
+  color: #404a58;
+}
+
+.contact ul {
+  list-style: none;
+  color: #404a58;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+}
+
+.footer-navigation h3 {
+  font-size: 1rem;
+  color: #404a58;
+}
+
+.footer-navigation ul {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+  list-style: none;
+}
+
+.footer-navigation ul li a {
+  color: #404a58;
+  text-decoration: none;
+}
+
+.footer-navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.divider-line {
+  height: 1px;
+  width: 100%;
+  background: #404a58;
+}
+
+.signature {
+  background: #404a58;
+  text-align: center;
+  padding: 5px;
+}
+
+.signature p {
+  color: #13181f;
+  font-size: 1.1rem;
+  font-style: italic;
+}

@@ -1,0 +1,302 @@
+/* Celular */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .introduction-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .introduction {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction-text {
+    display: grid;
+    width: 80%;
+  }
+
+  .introduction-text p {
+    font-size: 1.1rem;
+  }
+
+  .performance-picture img {
+    width: 100%;
+  }
+
+  .closure {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /*Header e navegação*/
+  header {
+    padding: 0px var(--content-spacing);
+  }
+
+  .header-actions {
+    margin: 0;
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    border: none;
+    display: block;
+  }
+
+  .navigation-vmobile li:nth-child(1) {
+    border: none;
+  }
+
+  .navigation-vmobile li {
+    width: 100%;
+  }
+
+  .navigation-vmobile ul {
+    border-top: #404a58 solid 1px;
+    list-style: none;
+    display: flex;
+  }
+
+  /*Introducão à página Sobre*/
+  .introduction-text h1 {
+    font-size: 2rem;
+  }
+
+  .introduction {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction-text {
+    display: grid;
+    width: 70%;
+  }
+
+  .introduction-text p {
+    font-size: 1.2rem;
+  }
+
+  /*Posição das imagens e textos*/
+  .performance {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .performance #imagem-v-mobile {
+    display: none;
+  }
+
+  .performance #imagem-v-pc {
+    display: block;
+    grid-column: 2;
+  }
+
+  .performance-picture img {
+    width: 100%;
+  }
+
+  .performance-info {
+    display: grid;
+    align-items: center;
+  }
+
+  .performance-text {
+    display: grid;
+    gap: 15px;
+  }
+
+  .closure {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .closure p {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /*Header e navegação*/
+  header {
+    padding: 0px 80px;
+  }
+
+  .header-actions {
+    margin: 0;
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .navigation-vdesktop {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    margin-left: 100px;
+  }
+
+  .navigation-vdesktop ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .navigation-vdesktop ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navigation-vdesktop ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #262a2f;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  /*Introducão à página Sobre*/
+  .introduction-text h1 {
+    font-size: 2rem;
+  }
+
+  .introduction {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction-text {
+    display: grid;
+    width: 40%;
+    gap: 15px;
+  }
+
+  .introduction-text p {
+    font-size: 1.2rem;
+  }
+
+  /*Posição das imagens e textos*/
+  .performance {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .performance #imagem-v-mobile {
+    display: none;
+  }
+
+  .performance #imagem-v-pc {
+    display: block;
+    grid-column: 2;
+  }
+
+  .performance-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .performance-text p {
+    font-size: 1.2rem;
+  }
+
+  .performance-text ul li {
+    font-size: 1.1rem;
+  }
+
+  .performance-picture {
+    height: 400px;
+  }
+
+  .performance-picture img {
+    width: 100%;
+  }
+
+  .performance-info {
+    display: grid;
+    align-items: center;
+  }
+
+  .performance-text {
+    display: grid;
+    gap: 15px;
+  }
+
+  .closure {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .closure p {
+    width: 70%;
+  }
+
+  /*Rodapé*/
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+  }
+
+  .contact {
+    grid-column: 1;
+  }
+
+  .divider-line {
+    display: none;
+  }
+
+  .footer-navigation {
+    grid-column: 2;
+  }
+
+  .slogan {
+    grid-column: 1;
+  }
+}

@@ -61,6 +61,14 @@
 
 /* Responsivo para tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    padding: 0px var(--content-spacing);
+  }
+
+  .header-actions {
+    margin: 0;
+  }
+
   #icon-menu {
     display: none;
   }
@@ -192,8 +200,11 @@
 /* Responsivo para desktop */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header {
-    padding: 0px var(--content-spacing-desktop) 0px
-      var(--content-spacing-desktop);
+    padding: 0px var(--content-spacing);
+  }
+
+  .header-actions {
+    margin: 0;
   }
 
   #icon-menu {
@@ -383,8 +394,11 @@
 /* Responsivo para grandes telas */
 @media screen and (min-width: 1200px) {
   header {
-    padding: 0px var(--content-spacing-large-screens) 0px
-      var(--content-spacing-large-screens);
+    padding: 0px 100px;
+  }
+
+  .header-actions {
+    margin: 0;
   }
 
   #icon-menu {

@@ -1,0 +1,152 @@
+@import url(global.css);
+
+main {
+  background: #2276f5;
+}
+
+.introduction-plans h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.content {
+  padding: var(--content-spacing);
+}
+
+/* Estilo da seção de planos */
+.plans-container {
+  display: grid;
+  gap: 40px;
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+
+.plans {
+  position: relative;
+  display: grid;
+  flex-flow: column wrap;
+  gap: 20px;
+  padding: 40px;
+  background: #13181f;
+  border-radius: 10px;
+}
+
+.plans-intro {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.plans-price {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
+}
+
+.plans-intro h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.plans-intro p {
+  color: #404a58;
+}
+
+.plans-price p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.plans-price p span {
+  color: #404a58;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#purchase-btn {
+  padding: 10px;
+  border: 1px solid #2276f5;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#purchase-btn:hover {
+  background: #195cc1;
+}
+
+.plans-advantages {
+  list-style-position: inside;
+  color: #404a58;
+}
+
+#recommended-plan {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  top: -11px;
+  left: 160px;
+}
+
+#recommended-plan p {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: #2276f5;
+}
+
+/* Seção de perguntas frequentes */
+.faq-container {
+  display: grid;
+  gap: 18px;
+}
+
+.faq-introduction {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.faq-view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #13181f;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+}
+
+.ask {
+  display: grid;
+  align-items: center;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.open-reply {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.open-reply button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.open-reply button span {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.reply {
+  padding: 15px;
+  background-color: #13181f;
+  border-top: 3px solid #404a58;
+  color: #404a58;
+}
