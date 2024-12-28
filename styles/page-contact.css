@@ -1,0 +1,121 @@
+@import url(global.css);
+
+main {
+  background: #2276f5;
+}
+
+.introduction-section {
+  padding: 15px;
+}
+
+.img-introduction {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.img-introduction img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.introduction-content {
+  display: grid;
+  text-align: center;
+  padding: var(--content-spacing);
+  color: #fff;
+  gap: 15px;
+}
+
+/* Métodos de contato */
+.contact-section {
+  display: grid;
+  background: #13181f;
+  padding: var(--content-spacing);
+  gap: 40px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.contact-methods img {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(81%) saturate(3983%)
+    hue-rotate(207deg) brightness(101%) contrast(92%);
+  width: 50px;
+}
+
+/* Formulário de contato */
+.introduction-form {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+}
+
+.form-section {
+  display: grid;
+  gap: 20px;
+  padding: var(--content-spacing);
+}
+
+.form-container {
+  width: 100%;
+}
+
+#form-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 7px;
+}
+
+.contact-info input {
+  padding: 7px;
+  border: none;
+}
+
+#imessage {
+  padding: 7px;
+}
+
+.contact-info label {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.required::after {
+  content: "*";
+}
+
+#send-form-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#send-form-btn button {
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  background: #13181f;
+  border: none;
+  color: #404a58;
+  cursor: pointer;
+}
+
+#send-form-btn button:hover {
+  color: #fff;
+}

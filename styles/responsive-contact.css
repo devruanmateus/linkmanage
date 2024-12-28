@@ -1,0 +1,384 @@
+/* Responsivo para celular */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .img-introduction img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .introduction-form {
+    font-size: 1rem;
+  }
+
+  .form-container {
+    width: 70%;
+  }
+
+  .form-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+/* Responsivo para tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  * Header */ header {
+    padding: 0px var(--content-spacing);
+  }
+
+  .header-actions {
+    margin: 0;
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    border: none;
+    display: block;
+  }
+
+  .navigation-vmobile li:nth-child(1) {
+    border: none;
+  }
+
+  .navigation-vmobile li {
+    width: 100%;
+  }
+
+  .navigation-vmobile ul {
+    border-top: #404a58 solid 1px;
+    list-style: none;
+    display: flex;
+  }
+
+  /* Conteúdo */
+  .introduction-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+  }
+
+  .introduction-content {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: 60%;
+  }
+
+  .introduction-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-section {
+    justify-content: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #form-contact {
+    width: 500px;
+  }
+
+  #send-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #send-form-btn button {
+    width: 120px;
+    padding: 10px 30px;
+    font-weight: 500;
+  }
+}
+
+/* Responsivo para desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Header */
+  header {
+    padding: 0px var(--content-spacing);
+  }
+
+  .header-actions {
+    margin: 0;
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .navigation-vdesktop {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    margin-left: 100px;
+  }
+
+  .navigation-vdesktop ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .navigation-vdesktop ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navigation-vdesktop ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #262a2f;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  /* Conteúdo */
+  .introduction-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+  }
+
+  .introduction-content {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: 50%;
+  }
+
+  .introduction-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .introduction-content p {
+    font-size: 1.1rem;
+  }
+
+  .img-introduction img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .introduction-form {
+    font-size: 1.1rem;
+    width: 65%;
+  }
+
+  .form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #form-contact {
+    width: 500px;
+  }
+
+  #send-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #send-form-btn button {
+    width: 120px;
+    padding: 10px 30px;
+    font-weight: 500;
+  }
+}
+
+/* Responsivo para Grandes Telas */
+@media screen and (min-width: 1200px) {
+  /* Header */
+  header {
+    padding: 0px var(--content-spacing);
+  }
+
+  .header-actions {
+    margin: 0;
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  #login {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #404a58;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #login:hover {
+    background: #606e82;
+  }
+
+  .navigation-vmobile {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .navigation-vdesktop {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    margin-left: 100px;
+  }
+
+  .navigation-vdesktop ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .navigation-vdesktop ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navigation-vdesktop ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #262a2f;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  /* Conteúdo */
+  .introduction-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+  }
+
+  .introduction-content {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: 700px;
+  }
+
+  .introduction-content h1 {
+    font-size: 2rem;
+  }
+
+  .introduction-content p {
+    font-size: 1.3rem;
+  }
+
+  .img-introduction {
+    width: 350px;
+    height: 350px;
+  }
+
+  .img-introduction img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .introduction-form {
+    font-size: 1.2rem;
+    width: 500px;
+  }
+
+  .form-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #form-contact {
+    width: 700px;
+  }
+
+  #send-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #send-form-btn button {
+    width: 120px;
+    padding: 10px 30px;
+    font-weight: 500;
+  }
+}

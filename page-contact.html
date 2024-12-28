@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linkmanage - Contato</title>
+  <link rel="stylesheet" href="styles/page-contact.css">
+  <link rel="stylesheet" href="styles/responsive-contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+</head>
+
+<body>
+  <header>
+    <div class="header-nav">
+      <div class="logo">
+        <a href="#"><img src="img/linkmanage-logo.svg" alt=""></a>
+      </div>
+      <nav class="navigation-vdesktop">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Preços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-actions">
+      <button id="login">Entrar</button>
+      <button id="signup">Cadastra-se</button>
+      <button id="icon-menu" onclick="openMenu()"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+
+  </header>
+
+  <nav class="navigation-vmobile">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Preços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="content">
+      <section class="introduction-section">
+        <div class="img-introduction">
+          <img src="img/contact/call.jpg" alt="Homem de negócios conversando no telefone">
+        </div>
+        <div class="introduction-content">
+          <h1>Fale Conosco</h1>
+          <p>Estamos aqui para ajudar! Entre em contato com a equipe LinkManage para tirar dúvidas, solicitar suporte ou saber mais sobre como nosso sistema pode transformar a gestão do seu negócio.</p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-methods">
+          <img src="img/contact/email.png" alt="Email">
+          <p>Entre em contato pelo email:
+            contato@linkmanage.com</p>
+        </div>
+        <div class="contact-methods">
+          <img src="img/contact/telephone.png" alt="Telefone">
+          <p>Ligue para: (11) 98765-4321</p>
+        </div>
+        <div class="contact-methods">
+          <img src="img/contact/service.png" alt="Atendimento">
+          <p>Horário de atendimento: Segunda a sexta-feira, das 9h às 18h.</p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="introduction-form">
+          <h1>Preencha o formulário abaixo e entraremos em contato com você:</h1>
+        </div>
+
+        <div class="form-container">
+          <form id="form-contact" method="post" action="" autocomplete="off">
+            <div class="contact-info">
+              <label for="iname" class="required">Nome</label>
+              <input placeholder="Digite seu nome" name="input-name" id="iname" type="text" required>
+            </div>
+            <div class="contact-info">
+              <label for="iemail" class="required">Email</label>
+              <input name="input-email" id="iemail" type="email" placeholder="Ex: julio@gmail.com" required>
+            </div>
+            <div class="contact-info">
+              <label for="itel" class="required">Telefone</label>
+              <input name="input-tel" id="itel" type="tel" placeholder="Ex: (12) 74569-7895" minlength="11" required>
+            </div>
+            <div class="contact-info">
+              <label for="isubject" class="required">Assunto</label>
+              <input name="input-subject" id="isubject" type="text" placeholder="Assunto da Mensagem" required>
+            </div>
+            <div class="contact-info">
+              <label for="imessage" class="required">Mensagem</label>
+              <textarea name="message" id="imessage" placeholder="Escreva aqui" rows="5" cols="33" minlength="70" required></textarea>
+            </div>
+            <div id="send-form-btn"><button>Enviar</button></div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <section class="footer-content">
+      <section class="slogan">
+        <a href="#"><img src="img/linkmanage-logo.svg" alt="Logo da Linkmanage"></a>
+        <h2>Conectando processos, <br> impulsionando resultados.</h2>
+      </section>
+      <section class="footer-navigation">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Funcionalidades</a></li>
+          <li><a href="#">Planos e Preços</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+        </ul>
+      </section>
+      <div class="divider-line"></div>
+      <section class="contact">
+        <ul>
+          <li>Email: contato@linkmanage.com</li>
+          <li>Telefone: (11) 1234-5678</li>
+          <li>Suporte: suporte@linkmanage.com</li>
+        </ul>
+      </section>
+      <div class="divider-line"></div>
+    </section>
+
+    <section class="signature">
+      <p>Desenvolvido por <span>Ruan Mateus</span></p>
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
