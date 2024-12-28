@@ -1,7 +1,4 @@
-:root {
-  --content-spacing-desktop: 35px;
-  --content-spacing-large-screens: 45px;
-}
+@import url(global.css);
 
 /* Responsivo para celular */
 @media screen and (min-width: 650px) and (max-width: 768px) {
@@ -137,7 +134,7 @@
   }
 
   .advantages-intro h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .advantages-intro p {
@@ -153,7 +150,7 @@
   }
 
   .benefits-intro h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .benefits-intro p {
@@ -179,7 +176,7 @@
   }
 
   .services-intro p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   #icon-linkmanage img {
@@ -192,8 +189,16 @@
   }
 
   .plans-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0px var(--content-spacing) var(--content-spacing)
+      var(--content-spacing);
+  }
+
+  .plans {
+    width: 370px;
+    height: 500px;
   }
 }
 
@@ -268,7 +273,7 @@
 
   .introduction-content {
     top: 7rem;
-    width: 90%;
+    width: 60%;
     border-radius: 0px 20px 20px 0px;
   }
 
@@ -279,7 +284,7 @@
   }
 
   .introduction-content h1 {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
   }
 
   .introduction-content p {
@@ -293,11 +298,11 @@
   .advantages-intro {
     display: grid;
     align-items: center;
-    padding: var(--content-spacing-desktop);
+    padding: var(--content-spacing);
   }
 
   .advantages-intro h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     grid-column: 1;
   }
 
@@ -309,7 +314,7 @@
   .advantages-content {
     display: flex;
     justify-content: center;
-    padding: var(--content-spacing-desktop);
+    padding: var(--content-spacing);
   }
 
   #icon-linkmanage {
@@ -321,21 +326,22 @@
   }
 
   .benefits-intro {
-    padding: 35px;
+    padding: var(--content-spacing);
   }
 
   .benefits-intro h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .benefits-intro p {
     font-size: 1.1rem;
+    width: 65%;
   }
 
   .benefits {
-    padding: var(--content-spacing-desktop);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0px var(--content-spacing) 0px var(--content-spacing);
   }
 
   .benefits-box {
@@ -347,12 +353,12 @@
     font-size: 1rem;
   }
 
-  .services-intro h2 {
-    font-size: 1.8rem;
+  .services-intro {
+    padding: var(--content-spacing);
   }
 
-  .services {
-    padding: 35px;
+  .services-intro h2 {
+    font-size: 1.8rem;
   }
 
   .services-intro p {
@@ -365,8 +371,13 @@
   }
 
   .plans-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    display: flex;
+  }
+
+  .plans {
+    width: 400px;
+    height: 500px;
   }
 
   .footer-content {
@@ -388,6 +399,17 @@
 
   .slogan {
     grid-column: 1;
+  }
+
+  .plans-container {
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .plans {
+    width: 370px;
+    height: 500px;
   }
 }
 
@@ -467,38 +489,38 @@
 
   .introduction-content {
     top: 6rem;
-    width: 70%;
+    width: 60%;
     border-radius: 0px 20px 20px 0px;
   }
 
   .introduction-content h1,
   .introduction-content p,
   .introduction-content a {
-    margin-left: var(--content-spacing-large-screens);
+    margin-left: var(--content-spacing);
   }
 
   .introduction-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .introduction-content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   #introduction-btn {
     width: 200px;
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 
   .advantages-intro {
     display: grid;
     align-items: center;
-    padding: var(--content-spacing-large-screens);
+    padding: var(--content-spacing);
   }
 
   .advantages-intro h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     grid-column: 1;
   }
 
@@ -510,7 +532,7 @@
   .advantages-content {
     display: flex;
     justify-content: center;
-    padding: var(--content-spacing-large-screens);
+    padding: var(--content-spacing);
   }
 
   #icon-linkmanage {
@@ -518,38 +540,41 @@
   }
 
   #icon-linkmanage img {
-    width: 70%;
+    width: 60%;
   }
 
   .benefits-intro {
-    padding: var(--content-spacing-large-screens);
+    padding: var(--content-spacing);
   }
 
   .benefits-intro h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .benefits-intro p {
     font-size: 1.2rem;
+    width: 60%;
   }
 
   .benefits {
-    padding: var(--content-spacing-large-screens);
+    margin: 0;
+    padding: var(--content-spacing);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .benefits-box {
+    width: 350px;
     height: 250px;
     justify-content: center;
   }
 
   .benefits-box h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .benefits-box p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   #btn-cta-benefits {
@@ -562,15 +587,16 @@
   }
 
   .services-intro h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .services-intro {
-    padding: var(--content-spacing-large-screens);
+    padding: var(--content-spacing);
   }
 
   .services-intro p {
     font-size: 1.1rem;
+    width: 60%;
   }
 
   .slogan h2 {
@@ -580,14 +606,14 @@
 
   .plans-container {
     justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0px var(--content-spacing-large-screens)
-      var(--content-spacing-large-screens) var(--content-spacing-large-screens);
+    display: flex;
+    padding: 0px var(--content-spacing) var(--content-spacing)
+      var(--content-spacing);
   }
 
   .plans {
-    width: 100%;
+    width: 400px;
+    height: 500px;
   }
 
   .plans-intro h3 {

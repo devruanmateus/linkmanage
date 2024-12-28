@@ -135,7 +135,7 @@ p {
 
 .benefits-intro {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   color: #fff;
   gap: 10px;
 }
@@ -146,7 +146,7 @@ p {
 
 .benefits {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
   gap: 10px;
   margin-top: 30px;
@@ -159,8 +159,8 @@ p {
 
 .benefits-box-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .benefits-box-container img {
@@ -234,10 +234,12 @@ p {
 
 /* Estilo da seção de planos do Linkmanage */
 .plans-container {
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
   gap: 40px;
   margin-top: 40px;
   padding-bottom: 70px;
+  justify-content: center;
 }
 
 .plans {
@@ -247,6 +249,8 @@ p {
   padding: 40px;
   background: #13181f;
   border-radius: 20px;
+  width: 400px;
+  height: 500px;
 }
 
 .plans-intro {
